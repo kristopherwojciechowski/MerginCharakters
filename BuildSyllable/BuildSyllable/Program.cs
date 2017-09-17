@@ -11,16 +11,28 @@ namespace MerginCharakters
         static void Main(string[] args)
         {
             string[] samogloski = new string[6] { "a", "e", "i", "o", "u", "y" };
-            string[] spolgloski = new string[18] {"b", "c", "d", "f", "g", "h",
-                                                  "j", "k", "l", "l", "m", "n",
-                                                  "p", "r", "s", "t", "w", "y"};
+            string[] spolgloski = new string[24] {"a", "b", "c", "d", "e", "f", "g", "h",
+                                                  "i", "j", "k", "l", "ł", "m", "n", "o",
+                                                  "p", "r", "s", "t", "u", "w", "y", "z"};
 
-            string sylaba;
+            string[,,] sylaba = new string[samogloski.Length,spolgloski.Length,2];
 
-            sylaba = samogloski[0] + spolgloski[0];
+            int i, j;
 
-            Console.WriteLine("sylaba: " + sylaba);
+            for (i=0; i<samogloski.Length; i++)
+            {
+                for(j=0; j<spolgloski.Length; j++)
+                {
+                    if (samogloski[i] != spolgloski[j])
+                    {
+                        sylaba[i, j, 0] = samogloski[i] + spolgloski[j];
+                        sylaba[i, j, 1] = spolgloski[j] + samogloski[i];
+                    }
 
+                    Console.WriteLine(sylaba[i, j, 0] + " " + sylaba[i, j, 1]);
+
+                }
+            }
         }
     }
 }
