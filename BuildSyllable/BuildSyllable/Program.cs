@@ -24,9 +24,11 @@ namespace MerginCharakters
 
             do
             {
-                Int32 indexSamogloski = rand.Next(samogloski.Length);
+                int indexSamogloski = rand.Next(samogloski.Length);
                 int indexSpolgloski = rand.Next(spolgloski.Length + 1);
+
                 string letter1 = spolgloski.GetValue(indexSamogloski);
+
                 Console.WriteLine("If you want to continue press n ");
                 Console.WriteLine("If you want to leave press e ");
 
