@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace BuildSyllable
 {
     class Syllables
-    { 
-    
+    {
+        public string Sylaba;
+
         public static String BuildSyllableswithTwoLetters()
         {
             string[] samogloski = new string[6] { "a", "e", "i", "o", "u", "y" };
