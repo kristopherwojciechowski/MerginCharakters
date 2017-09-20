@@ -44,6 +44,26 @@ namespace MerginCharakters
                 Console.WriteLine(letter1 + "i" + letter2);
                 Console.WriteLine();
 
+                int indexSamogloski2 = rand.Next(samogloski.Length);
+                int indexSpolgloski2 = rand.Next(spolgloski.Length);
+
+                if (indexSamogloski2 == indexSamogloski || indexSpolgloski2 == indexSpolgloski)
+                {
+                    do
+                    {
+                        indexSamogloski2 = rand.Next(samogloski.Length);
+                        indexSpolgloski2 = rand.Next(spolgloski.Length);
+
+                    } while (indexSamogloski2 == indexSamogloski || indexSpolgloski2 == indexSpolgloski);
+                }
+
+                string letter3 = spolgloski[indexSpolgloski2];
+                string letter4 = samogloski[indexSamogloski2];
+
+                Console.WriteLine(letter1 + letter2 + letter3 + letter4);
+                Console.WriteLine();
+                Console.WriteLine(letter3 + letter4 + letter1 + letter2);
+                Console.WriteLine();
 
                 Console.WriteLine("If you want to continue press n ");
                 Console.WriteLine("If you want to leave press e ");
