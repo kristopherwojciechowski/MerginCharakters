@@ -13,8 +13,8 @@ namespace EnglishNumbers
             string[] liczebnikiSlownie = new string[5] { "one", "two", "three", "four", "five" };
             int[] liczebnikiCyframi = new int[5] { 1, 2, 3, 4, 5};
             string decision;
-            //do
-            //{
+            do
+            {
                 Random rand = new Random();
 
                 int wylosowanaIndex = rand.Next(liczebnikiCyframi.Length);
@@ -26,7 +26,6 @@ namespace EnglishNumbers
 
                 decision = Console.ReadLine();
 
-            //} while (decision != "e");
 
             string wylosowanyLiczebnikSlowo = liczebnikiSlownie[wylosowanaIndex];
             int wylosowanyLiczebnikNumer = liczebnikiCyframi[wylosowanaIndex];
@@ -45,6 +44,7 @@ namespace EnglishNumbers
                 Console.WriteLine("Popraw pisowanie");
 
             }
+        } while (decision != "e");
 
         }
     }
