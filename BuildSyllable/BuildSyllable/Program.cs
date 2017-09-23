@@ -72,20 +72,6 @@ namespace MerginCharakters
 
             } while (decision != "e");
 
-            //BuildSyllable sylab = new BuildSyllable();
-            //Sylaba sylab1 = new Sylaba();
-
-            //do
-            //{
-
-
-            //    Console.WriteLine("If you want to continue press n ");
-            //    Console.WriteLine("If you want to leave press e ");
-
-            //    decision = Console.ReadLine();
-
-            //} while (decision != "e");
-
         }
     }
 }
