@@ -10,8 +10,14 @@ namespace EnglishNumbers
     {
         static void Main(string[] args)
         {
-            string[] liczebnikiSlownie = new string[5] { "one", "two", "three", "four", "five" };
-            int[] liczebnikiCyframi = new int[5] { 1, 2, 3, 4, 5 };
+            string[] liczebnikiSlownie = new string[20] { "one", "two", "three", "four", "five",
+                                                          "six", "seven", "eight", "nine", "ten",
+                                                          "eleven", "twelve", "therteen", "fourteen", "fiveteen",
+                                                          "sixteeen", "seventeen", "eighteen", "ninrteen", "twenty"};
+            int[] liczebnikiCyframi = new int[20] { 1, 2, 3, 4, 5,
+                                                   6, 7, 8, 9, 10,
+                                                   11, 12, 13, 14, 15,
+                                                   16, 17, 18, 19, 20};
             string decision;
             string wpisanyTekst;
             int wylosowanyIndex;
@@ -34,8 +40,6 @@ namespace EnglishNumbers
 
                 beforeLustNum = lastNumber;
                 lastNumber = wylosowanyIndex;
-
-                //Console.WriteLine("wyslosawana liczba to " + liczebnikiCyframi[wylosowanaIndex] + " -> " + "(" + liczebnikiSlownie[wylosowanaIndex] + ")");
 
                 wylosowanyLiczebnikSlowo = liczebnikiSlownie[wylosowanyIndex];
                 wylosowanyLiczebnikNumer = liczebnikiCyframi[wylosowanyIndex];
