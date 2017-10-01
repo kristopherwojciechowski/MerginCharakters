@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MerginCharakters
+namespace BuildSyllable
 {
     class Program
     {
@@ -23,6 +23,11 @@ namespace MerginCharakters
 
                 int indexSamogloski = rand.Next(samogloski.Length);
                 int indexSpolgloski = rand.Next(spolgloski.Length);
+
+                Console.WriteLine(ReadingLessons.RandomLetter(samogloski, indexSamogloski) +
+                                  ReadingLessons.RandomLetter(samogloski, indexSamogloski));
+
+
                 string letter1 = spolgloski[indexSpolgloski];
                 string letter2 = samogloski[indexSamogloski];
 
