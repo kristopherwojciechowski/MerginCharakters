@@ -10,14 +10,18 @@ namespace EnglishNumbers
     {
         static void Main(string[] args)
         {
-            string[] liczebnikiSlownie = new string[20] { "one", "two", "three", "four", "five",
+            string[] liczebnikiSlownie = new string[28] { "one", "two", "three", "four", "five",
                                                           "six", "seven", "eight", "nine", "ten",
-                                                          "eleven", "twelve", "therteen", "fourteen", "fiveteen",
-                                                          "sixteeen", "seventeen", "eighteen", "ninrteen", "twenty"};
-            int[] liczebnikiCyframi = new int[20] { 1, 2, 3, 4, 5,
+                                                          "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+                                                          "sixteen", "seventeen", "eighteen", "nineteen", "twenty",
+                                                          "thirty", "forty", "fifty", "sixty", "seventy",
+                                                          "eighty", "ninety", "one hundred"};
+            int[] liczebnikiCyframi = new int[28] { 1, 2, 3, 4, 5,
                                                    6, 7, 8, 9, 10,
                                                    11, 12, 13, 14, 15,
-                                                   16, 17, 18, 19, 20};
+                                                   16, 17, 18, 19, 20,
+                                                   30, 40, 50, 60, 70,
+                                                   80, 90, 100};
             string decision;
             string wpisanyTekst;
             int wylosowanyIndex;
@@ -53,16 +57,18 @@ namespace EnglishNumbers
                 {
                     do
                     {
-                        Console.WriteLine("Popraw pisowanie");
+                        Console.WriteLine("Popraw pisownie");
                         wpisanyTekst = Console.ReadLine();
 
                     } while (wpisanyTekst != wylosowanyLiczebnikSlowo);
+
                 }
                 else
                 {
-                    Console.WriteLine("Poprawna pisowania");
+                    Console.WriteLine("Poprawna pisownia");
+
                 }
-                Console.WriteLine("Poprawna pisowania");
+                Console.WriteLine("Poprawna pisownia");
                 Console.WriteLine("If you want to continue press n ");
                 Console.WriteLine("If you want to leave press e ");
 
