@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace EnglishNumbers
     {
         static void Main(string[] args)
         {
+            FileStream fileStream = new FileStream("englishNumbers.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
             string[] liczebnikiSlownie = new string[28] { "one", "two", "three", "four", "five",
                                                           "six", "seven", "eight", "nine", "ten",
                                                           "eleven", "twelve", "thirteen", "fourteen", "fifteen",
